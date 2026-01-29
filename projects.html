@@ -2,66 +2,186 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects | Ephrem Sahle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>My Projects | Ephrem Sahle</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
 
-<header>
-    <nav class="navbar">
-        <h1 class="logo">Ephrem</h1>
-        <button id="menuToggle" class="menu-toggle">☰</button>
+        <!-- Navigation -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Ephrem</span><span class="logo-highlight">Sahle</span>
+                    </a>
+                    
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><button id="themeToggle" class="theme-btn">🌙</button></li>
-        </ul>
-    </nav>
-</header>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Header -->
+            <section class="page-header">
+                <h1 class="page-title">My Projects</h1>
+                <p class="page-subtitle">Showcasing my journey in web development</p>
+            </section>
 
-<main>
-    <section class="projects">
-        <h2>My Projects</h2>
+            <!-- Projects Section -->
+            <section class="projects-section">
+                <div class="projects-container">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project1.png" alt="Personal Portfolio Website" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML</span>
+                                    <span class="project-tag">CSS</span>
+                                    <span class="project-tag">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-description">
+                                A fully responsive portfolio website built with vanilla HTML, CSS, and JavaScript.
+                                Features light/dark mode, form validation, and mobile-friendly navigation.
+                            </p>
+                            
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul class="features-list">
+                                    <li>Responsive design for all devices</li>
+                                    <li>Light/Dark mode toggle</li>
+                                    <li>Mobile navigation menu</li>
+                                    <li>Form validation</li>
+                                    <li>Smooth animations</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
 
-        <article class="project-card">
-            <img src="images/project1.jpg" alt="Portfolio project preview">
-            <h3>Personal Portfolio</h3>
-            <p>A responsive portfolio website built using pure HTML, CSS, and JavaScript.</p>
-            <button id="likeBtn">👍 Like</button>
-            <span id="likeCount">0</span>
-        </article>
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project1.png" alt="Task Manager App" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="project-tag">JavaScript</span>
+                                    <span class="project-tag">LocalStorage</span>
+                                    <span class="project-tag">CSS Grid</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Task Manager App</h3>
+                            <p class="project-description">
+                                A task management application built with vanilla JavaScript. Includes features
+                                like adding tasks, marking as complete, and data persistence using localStorage.
+                            </p>
+                            
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul class="features-list">
+                                    <li>Add/Edit/Delete tasks</li>
+                                    <li>Mark tasks as complete</li>
+                                    <li>Filter tasks by status</li>
+                                    <li>LocalStorage for data</li>
+                                    <li>Clean UI design</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Coming Soon Section -->
+                <div class="coming-soon">
+                    <h3>More Projects Coming Soon</h3>
+                    <p>I'm currently working on new projects to expand my portfolio. Stay tuned!</p>
+                </div>
+            </section>
+        </main>
 
-        <section class="contact">
-            <h3>Contact Me</h3>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Ephrem Sahle</h3>
+                    <p class="footer-text">Beginner Web Developer from Addis Ababa, Ethiopia</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact</h4>
+                    <p class="footer-text">
+                        <i class="fas fa-envelope"></i> ephremsahle7@gmail.com
+                    </p>
+                    <p class="footer-text">
+                        <i class="fas fa-phone"></i> +251-954-902-680
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="about.html" class="footer-link">About</a>
+                        <a href="projects.html" class="footer-link">Projects</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Ephrem Sahle. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 
-            <form id="contactForm">
-                <label for="name">Name</label>
-                <input id="name" type="text" required>
-
-                <label for="email">Email</label>
-                <input id="email" type="email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-
-            <p id="formMessage"></p>
-        </section>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2026 Ephrem Sahle</p>
-</footer>
-
-<script src="js/main.js"></script>
-<script src="js/form-validation.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
